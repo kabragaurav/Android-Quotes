@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sharebtn"
+        android:id="@+id/sharebtn"
+        android:background="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/robin"
+        android:layout_width="wrap_content"
+        android:layout_height="226dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/robin"
+        android:onClick="robin"/>
+        <ImageView
+            android:id="@+id/paulo"
+            android:layout_width="wrap_content"
+            android:layout_height="226dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/paulo"
+            android:onClick="paulo"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/gandhi"
+            android:layout_width="wrap_content"
+            android:layout_height="226dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/gandhi"
+            android:onClick="gandhi"/>
+        <ImageView
+            android:id="@+id/einstein"
+            android:layout_width="wrap_content"
+            android:layout_height="226dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/einstein"
+            android:onClick="einstein"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
