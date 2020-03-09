@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background_material_light">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -35,14 +36,15 @@
             android:layout_height="100dp"
             android:text="Night View"
             android:textColor="?attr/textcolor"
-            android:textStyle="bold"></Switch>
+            android:textStyle="bold"/>
 
         <Button
             android:layout_width="132dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="0dp"
             android:onClick="dev"
-            android:text="Developer"></Button>
+            android:text="Developer"
+            android:background="@drawable/stylized_button"/>
 </LinearLayout>
 
 

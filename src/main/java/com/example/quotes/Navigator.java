@@ -11,6 +11,9 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.r0adkll.slidr.Slidr;
 
 public class Navigator extends AppCompatActivity {
     ImageView img;
@@ -25,6 +28,9 @@ public class Navigator extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigator);
+
+        Slidr.attach(this);
+
         img = findViewById(R.id.imageView);
         txtView = findViewById(R.id.textView);
 
@@ -52,12 +58,24 @@ public class Navigator extends AppCompatActivity {
 
         if(var1!=null && var1.equals("Robin Sharma")){
             img.setImageResource(R.drawable.robin);
+            img.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(Navigator.this, "Robin Sharma", Toast.LENGTH_SHORT).show();
+                }
+            });
             String htmlString = "√ Give out what you most want to come back.<br/><br/>"+
                     "√ You can't make someone feel good about themselves until you feel good about.<br/>";
             txtView.setText(Html.fromHtml(htmlString));
         }
         else if(var2!=null && var2.equals("Paulo Coelho")){
             img.setImageResource(R.drawable.paulo);
+            img.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(Navigator.this, "Paulo Coelho", Toast.LENGTH_SHORT).show();
+                }
+            });
             String htmlString = "√ Tell your heart that the fear of suffering is worse than the suffering itself. And no heart has ever suffered when it goes in search of its dream.<br/><br/>"+
                     "√ When you want something, all the universe conspires in helping you to achieve it.<br/>";
 
@@ -66,6 +84,12 @@ public class Navigator extends AppCompatActivity {
         }
         else if(var3!=null && var3.equals("Mohandas Karamchand Gandhi")){
             img.setImageResource(R.drawable.gandhi);
+            img.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(Navigator.this, "MK Gandhi", Toast.LENGTH_SHORT).show();
+                }
+            });
             String htmlString = "√ An eye for eye only ends up making the whole world blind.<br/><br/>"+
                     "√ Happiness is when what you think, what you say, and what you do are in harmony.<br/>";
 
@@ -75,6 +99,12 @@ public class Navigator extends AppCompatActivity {
 
         else if(var4!=null && var4.equals("Albert Einstein")){
             img.setImageResource(R.drawable.einstein);
+            img.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(Navigator.this, "Albert Einstein", Toast.LENGTH_SHORT).show();
+                }
+            });
             String htmlString = "√ Insanity: doing the same thing over and over again and expecting different results.<br/><br/>"+
                     "√ Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.<br/>";
 

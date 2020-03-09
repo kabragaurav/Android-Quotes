@@ -9,9 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Dev"></activity>
-        <activity android:name=".Navigator" />
-        <activity android:name=".Robin" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<!--        <activity android:name=".Dev"></activity>-->
+        <activity android:name=".Dev" android:theme="@style/AppTheme.SlidrActivityTheme"></activity>
+        <activity android:name=".Navigator" android:theme="@style/AppTheme.SlidrActivityTheme"></activity>
     </application>
 
 </manifest>
